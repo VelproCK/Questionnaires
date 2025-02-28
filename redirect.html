@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>表单页面</title>
-    <style>
-        iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        }
-    </style>
+    <title>表单提交</title>
 </head>
 <body>
-    <iframe
-        src="https://alidocs.dingtalk.com/notable/share/form/v011wvqrojpVDXvOako_4W3C79o_73W2s0c?prefill_品牌名称=hz测试公司&prefill_合作的公司=hz测试公司&hide_品牌名称=1"
-    ></iframe>
+    <form
+        action="https://alidocs.dingtalk.com/notable/share/form/v011wvqrojpVDXvOako_4W3C79o_73W2s0c"
+        method="POST"
+        target="_blank"
+    >
+        <input type="hidden" name="prefill_品牌名称" value="hz测试公司" />
+        <input type="hidden" name="prefill_合作的公司" value="hz测试公司" />
+        <input type="hidden" name="hide_品牌名称" value="1" />
+        <button type="submit">提交表单</button>
+    </form>
 </body>
 </html>
